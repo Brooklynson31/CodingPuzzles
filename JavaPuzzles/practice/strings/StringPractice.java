@@ -19,7 +19,6 @@ public class StringPractice {
 			String str2 = str.substring(3, 6); // starts at 1st argument and goes up to but not including the 2nd argument
 			System.out.println(str2);
 
-			//Assignment:
 
 		}
 }
