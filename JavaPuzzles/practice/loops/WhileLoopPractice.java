@@ -1,6 +1,6 @@
 package practice.loops;
 
-public class LoopPractice {
+public class WhileLoopPractice {
 
 	//Create a method that will method will only print the text following any occurence of "category
 	//extract all categories from the String argument
