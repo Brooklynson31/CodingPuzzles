@@ -2,18 +2,18 @@ package practice.loops;
 
 public class LoopPractice {
 
+	//Create a method that will method will only print the text following any occurence of "category
+	//extract all categories from the String argument
+	//Should print out: apparal, makeup, furniture
+	//Must use while loop, indexOf, substring
 	public static void main(String[] args) {
-
-		//Create a method that will extract part of a String
-		//extract all categories from the String argument
-		
 		String str = "We have a large inventory of things in our warehouse"
 		+ "the category:apparal and the slightly " 	
 		+ "more in demand category:makeup along with the category:furniture and --";
 		
 		printCategories(str);
+		printCategories2(str);
 		
-		//Tools : while loop, indexOf, substring
 	}
 
 	
@@ -35,5 +35,20 @@ public class LoopPractice {
 		}
 		
 		return cat;
+	}
+	//instructor solution
+	public static void printCategories2(String str){
+		int i = 0;
+		while(true){
+			int found = str.indexOf("category:",i);
+			if(found == -1){
+				break;
+			}
+			int start = found+9; // start of the actual string we are looking for(after categories:)
+			int end = str.indexOf(" ", start); //find index of first space after string we are looking
+			System.out.println(str.substring(start,end));
+			i = end+1; //move past string we've already found
+		}
+		
 	}
 }
