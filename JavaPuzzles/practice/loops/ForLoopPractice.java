@@ -8,9 +8,9 @@ public class ForLoopPractice {
 
 	String name = "aksjbdkasjdnbkalbnd";
 	
-//	for(int i=name.length()-1; i >-1;i--){
-//		System.out.println("char: " + name.charAt(i));
-//	}
+	for(int i=name.length()-1; i >-1;i--){
+		System.out.println("char: " + name.charAt(i));
+	}
 	
 	printEvenIntegers();
 		
