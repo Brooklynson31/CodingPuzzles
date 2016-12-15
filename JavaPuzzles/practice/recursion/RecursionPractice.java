@@ -7,7 +7,7 @@ public class RecursionPractice {
 	//Tools: substring char at
 	public static void main(String[] args) {
 
-		System.out.println(allDollars("hello")); //h$e$l$l$o
+		System.out.println(allDollars2("hello")); //h$e$l$l$o
 		System.out.println(allDollars("james"));  // c$a$k$e
 		System.out.println(allDollars("sad")); //h$e$l$l$o
 
@@ -23,8 +23,17 @@ public class RecursionPractice {
 		}  else{
 			return str; //you are at the first character in the array
 		}
-		char c = '$';
-		return str +c + d; //return input string that has $ inserted between string and last character that was parsed earlier
+		return str +"$" + d; //return input string that has $ inserted between string and last character that was parsed earlier
+		
+	}
+	
+	//Instructor Solution
+	
+	public static String allDollars2(String str){
+		
+		if(str.length() <= 1) return str;
+		
+		return str.charAt(0) + "$" + allDollars2(str.substring(1));
 		
 	}
 }
