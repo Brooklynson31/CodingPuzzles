@@ -73,7 +73,7 @@ public class App {
 			
 		}
 		
-		//Instructor Solution Optimized
+		//Instructor Solution 
 		public static int speedingFine3(int speed, boolean isHoliday){
 			int minSpeed = 60;
 			int maxSpeed = 80;
@@ -81,27 +81,34 @@ public class App {
 			if(isHoliday){
 				minSpeed +=5;
 				maxSpeed +=5;
-				if(minSpeed < speed && speed < maxSpeed){
-					return 100;
-				} else if (speed > maxSpeed){
-					return 200;
-				}
-				else{
-					return 0;
-				}
-			}
-			else{
-				if(minSpeed < speed && speed < maxSpeed){
-					return 100;
-				} else if (speed > maxSpeed){
-					return 200;
-				}
-				else{
-					return 0;
-				}
+				
 			}
 			
+			if(speed >= maxSpeed)
+					fine = 200;
+			if(speed <= minSpeed)
+					fine = 0;
+			if(speed > minSpeed && speed <= maxSpeed)
+					fine = 100;
+			return fine;
 		}
+		
+		//Instructor Solution optimized
+		public static int speedingFine4(int speed, boolean isHoliday){
+			
+			if(isHoliday){
+				speed -=5;
+				}
+			
+			if(speed <= 60)
+					return 0;
+			if(speed > 60 && speed <= 80)
+					return 100;
+			else{
+				return 200;
+			}
+		}
+
 	
 	
 	

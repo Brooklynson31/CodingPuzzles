@@ -15,13 +15,13 @@ public class RecursionPractice {
 	//Personal Solution
 	public static String allDollars(String str){
 		int i = str.length()-1; // start at the end of the string
-		char d = str.charAt(i); //store last char in array before its parsed off
+		char d = str.charAt(i); //store last char in string before its parsed off
 		if( i != 0){ //base case
 			i--;  //decrement until you reach base case
 			str = str.substring(0,i+1); //remove last character from the string
-			str = allDollars(str); //pass parsed string to the next recursive
+			str = allDollars(str); //pass parsed string to the next recursive call
 		}  else{
-			return str; //you are at the first character in the array
+			return str; //base case reached and return first char in String
 		}
 		return str +"$" + d; //return input string that has $ inserted between string and last character that was parsed earlier
 		

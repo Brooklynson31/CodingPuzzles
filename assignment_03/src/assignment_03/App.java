@@ -15,11 +15,12 @@ public class App {
 		twoSumOne(3, 1, 2)    <b>---></b> true <br>
 		twoSumOne(3, 2, 2) <b>---></b> false <br>
 	 */
+		//Personal Solution
 		public static boolean twoSumOne(int a, int b, int c) {
-			
-			return false;
+			return  (a+b==c) || (c+a==b) || (b+c==a)    ;
 
 		}
+
 		
 	
 	
