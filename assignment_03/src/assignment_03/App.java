@@ -20,6 +20,12 @@ public class App {
 			return  (a+b==c) || (c+a==b) || (b+c==a)    ;
 
 		}
+		
+		//Instructor Solution
+		public static boolean twoSumOne2(int a, int b, int c) {
+			return  (a+b==c) || (c+a==b) || (b+c==a)    ;
+
+		}
 
 		
 	
