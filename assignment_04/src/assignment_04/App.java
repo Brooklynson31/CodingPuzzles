@@ -18,8 +18,21 @@ public class App {
 		birdsSinging(95, true) <b>---></b> true <br>
 	 */
 	public static boolean birdsSinging(int temp, boolean isSummer) {
+		boolean birdsSinging = false;
+		int minTemp = 60;
+		int maxTemp = 90;
+		if(isSummer){
+			maxTemp+= 10;
+		}
 		
-		return true;		
+		if(temp >= minTemp && temp <= maxTemp){
+			birdsSinging = true;
+		} else{
+			birdsSinging = false;
+		}
+		
+		
+		return birdsSinging;		
 	}
 	
 	
