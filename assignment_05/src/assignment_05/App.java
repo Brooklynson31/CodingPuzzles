@@ -16,9 +16,11 @@ public class App {
 		isOrdered(1, 2, 1, false)    <b>---></b> false <br>
 		isOrdered(1, 1, 2, true) <b>---></b> true <br>
 	 */
+	
+	//Personal Solution
 	public static boolean isOrdered(int first, int second, int third, boolean itsOk) {
 		
-		return true;
+		return (itsOk) ?(second < third): (first < second && second < third);
 	}
 	
 	
