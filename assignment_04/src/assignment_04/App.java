@@ -17,6 +17,7 @@ public class App {
 		birdsSinging(95, false)    <b>---></b> false <br>
 		birdsSinging(95, true) <b>---></b> true <br>
 	 */
+	//personal solution
 	public static boolean birdsSinging(int temp, boolean isSummer) {
 		boolean birdsSinging = false;
 		int minTemp = 60;
@@ -35,7 +36,19 @@ public class App {
 		return birdsSinging;		
 	}
 	
+	//Instructor Solution
+	public static boolean birdsSinging2(int temp, boolean isSummer){
+		
+		if(isSummer){
+			return(temp >= 60 && temp <= 100);
+		}
+		return(temp >= 60 && temp <- 90);
+	}
 	
+	//Ternanry Operator Example
+	public static boolean birdsSinging3(int temp, boolean isSummer){
+		return(isSummer) ? (temp >= 60 && temp <= 100): (temp >= 60 && temp <= 90);
+	}
 	
 	
 	
