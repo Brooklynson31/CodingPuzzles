@@ -20,6 +20,7 @@ public class App {
 		fizzyWizzy(2)    <b>---></b> "2!" <br>
 		fizzyWizzy(3) <b>---></b> "Fizz!" <br>
 	 */
+	//Personal Solution
 	public static String fizzyWizzy(int n) {
 		String fizzyWiz = "FizzBuzz";
 		if(n % 3 == 0 && n % 5 == 0){
