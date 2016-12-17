@@ -20,7 +20,13 @@ public class App {
 	//Personal Solution
 	public static boolean isOrdered(int first, int second, int third, boolean itsOk) {
 		
-		return (itsOk) ?(second < third): (first < second && second < third);
+		return (itsOk) ?(second < third): (first < second && second < third && first < third);
+	}
+	
+	//Instructor Solution
+public static boolean isOrdered2(int first, int second, int third, boolean itsOk) {
+		
+		return (itsOk) ? (second < third): ( (first < second) && (second < third) && (first < third ));
 	}
 	
 	
