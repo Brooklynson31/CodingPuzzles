@@ -18,11 +18,21 @@ public class App {
 		sumUnique(3, 2, 3)    <b>---></b> 2 <br>
 		sumUnique(3, 3, 3) <b>---></b> 0 <br>
 	 */
-	
+	//Personal Solution
 	public static int sumUnique(int a, int b, int c) {
+		boolean ab = (a == b);
+		boolean bc = (b == c);
+		boolean ac = (a == c);
+		 
 		
-		return 0;
+		if(ac && ab) return 0;
+		if(bc) return a;
+		if(ac)return b;
+		if(ab) return c;
+		 
 		
+		return a+b+c;
+
 	}
 
 	
