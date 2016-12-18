@@ -34,7 +34,18 @@ public class App {
 		return 0;
 	}
 	
-	
+	//Instructor Solution
+	public static int nearestTwentyOne2(int a, int b) {
+		if(a > 21 && b > 21) return 0;
+		if(a > 21 && b <= 21) return b; // a disqualified
+		if (b > 21 && a <= 21) return a; // b disqualified
+		
+		if(a < b)
+			return a;
+		else
+			return b;
+
+	}
 
 	
 	
