@@ -26,9 +26,17 @@ public class App {
 		return repeat;
 		
 	}
-
 	
+	//Instructor 
+	public static String repeatChar2(String str) {
+		String result = "";
+		for(int i = 0; i < str.length();i++){
+			char aChar = str.charAt(i);
+			result = result + aChar + aChar;
+		}
 	
+		return result;
+	}
 	
 	
 	
